@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝网 - 登录</title>
+    <link rel="stylesheet" href="taobao-in.css">
+</head>
+<body>
+    <div class="login-header">
+        <a href="taobao-in.css" class="logo-link">
+            <img src="" alt="Taobao Logo" class="logo-img">
+            <div class="logo-text">Taobao.com</div>
+        </a>
+        <div class="top-feedback">
+            <span>网站无障碍</span>
+            <a href="#">登录页面改进建议</a>
+        </div>
+    </div>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-left">
+                <div class="login-title">手机扫码登录</div>
+                <div class="qr-box">
+                    <img src="" alt="扫码二维码" class="qr-img">
+                </div>
+                <div class="open-app-tip">
+                    打开淘宝<em>APP</em>——点击左上角扫一扫
+                </div>
+                <div class="qr-help">
+                    <a href="#">怎么扫码登录？</a>
+                </div>
+            </div>
+            <div class="login-divider"></div>
+            <div class="login-right">
+                <div class="tab-header">
+                    <span class="tab tab-active" id="tab-password">密码登录</span>
+                    <span class="tab" id="tab-sms">短信登录</span>
+                </div>
+                <div class="tab-content" id="tab-content-password">
+                    <input class="input" type="text" placeholder="账号名/邮箱/手机号">
+                    <div class="input-pwd-row">
+                        <input class="input" type="password" placeholder="请输入登录密码">
+                        <a href="#" class="forget-link">忘记密码</a>
+                    </div>
+                    <button class="login-btn" onclick="window.location.href='index.html'">登录</button>
+                </div>
+                <div class="tab-content" id="tab-content-sms" style="display: none;">
+                    <input class="input" type="text" placeholder="手机号">
+                    <div class="input-pwd-row">
+                        <input class="input" type="text" placeholder="请输入短信验证码">
+                        <button class="sms-btn">获取验证码</button>
+                    </div>
+                    <button class="login-btn" onclick="window,location.href='index.html'">登录</button>
+                </div>
+                <div class="login-footer">
+                    <a href="#">忘记账号</a>
+                    <a href="#">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

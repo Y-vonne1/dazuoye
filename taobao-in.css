@@ -1,0 +1,249 @@
+body {
+    background: #f3f2f7;
+    margin: 0;
+    font-family: '微软雅黑', Arial, sans-serif;
+}
+
+。login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px 0 60px;
+}
+
+。logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+。logo-img {
+    width: 80px;
+    height: 80px;
+    background: #eee;
+    border-radius: 10px;
+}
+
+。logo-text {
+    color: #f40;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+。top-feedback {
+    font-size: 14px;
+    color: #888;
+    margin-top: 12px;
+}
+。top-feedback a {
+    color: #f40;
+    margin-left: 12px;
+    text-decoration: none;
+}
+。top-feedback a:hover {
+    text-decoration: underline;
+}
+
+。login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+。login-box {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 40px 0;
+    display: flex;
+    width: 840px;
+    min-height: 420px;
+}
+
+.login-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #f0f0f0;
+    padding: 0 32px;
+    justify-content: center;
+}
+
+.login-title {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 24px;
+}
+
+.qr-box {
+    width: 180px;
+    height: 180px;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.qr-img {
+    width: 160px;
+    height: 160px;
+    background: #eee;
+}
+
+.open-app-tip {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+}
+.open-app-tip em {
+    color: #f40;
+    font-style: normal;
+}
+
+.qr-help {
+    font-size: 13px;
+    color: #888;
+}
+.qr-help a {
+    color: #f40;
+    text-decoration: none;
+}
+.qr-help a:hover {
+    text-decoration: underline;
+}
+
+.login-divider {
+    width: 1px;
+    background: #f0f0f0;
+    margin: 0 0px;
+}
+
+.login-right {
+    width: 50%;
+    padding: 0 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tab-header {
+    display: flex;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #f0f0f0;
+    height: 38px;
+}
+.tab {
+    font-size: 18px;
+    color: #888;
+    margin-right: 32px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+.tab-active {
+    color: #f40;
+    border-bottom: 2px solid #f40;
+    font-weight: bold;
+}
+
+.tab-content {
+    margin-bottom: 16px;
+}
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #e7e7e7;
+    background: #f7f8fa;
+    outline: none;
+    color: #222;
+    box-sizing: border-box;
+}
+.input:focus {
+    border-color: #f40;
+}
+
+.input-pwd-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.input-pwd-row .input {
+    flex: 1;
+    margin-bottom: 0;
+}
+.forget-link, .sms-btn {
+    font-size: 13px;
+    color: #888;
+    margin-left: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.forget-link:hover, .sms-btn:hover {
+    color: #f40;
+    text-decoration: underline;
+}
+.sms-btn {
+    color: #f40;
+    border: 1px solid #f40;
+    border-radius: 6px;
+    padding: 7px 14px;
+    background: #fff;
+}
+
+.login-btn {
+    width: 100%;
+    background: #ff5000;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 0;
+    cursor: pointer;
+    margin-bottom: 12px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+.login-btn:hover {
+    background: #e04800;
+}
+
+.login-footer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    margin-top: 18px;
+    color: #888;
+}
+.login-footer a {
+    color: #f40;
+    margin-left: 28px;
+    text-decoration: none;
+}
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 960px) {
+    .login-box {
+        flex-direction: column;
+        width: 90vw;
+    }
+    .login-left,
+    .login-right {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 32px;
+    }
+    .login-right { border-bottom: none; }
+    .login-divider { display: none; }
+}
