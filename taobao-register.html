@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>淘宝登录</title>
+    <title>淘宝注册</title>
     <link rel="stylesheet" href="taobao-in.css">
 </head>
 <body>
-    <!-- 页面头部 -->
     <header class="header">
         <a href="taobao-in.html" class="logo">
             <img src="logo.png" alt="淘宝" class="logo-img">
@@ -15,33 +14,42 @@
         </a>
     </header>
 
-    <!-- 登录表单 -->
     <main class="container">
         <div class="form-box">
-            <h2>用户登录</h2>
-            <form id="loginForm">
-                <!-- 账号输入 -->
+            <h2>新用户注册</h2>
+            <form id="registerForm">
+                <!-- 用户名输入 -->
                 <input type="text" 
                        class="input" 
-                       id="loginUser"
-                       placeholder="请输入账号"
+                       id="regUser"
+                       placeholder="请输入用户名"
                        required>
 
                 <!-- 密码输入 -->
                 <div class="password-box">
                     <input type="password" 
                            class="input" 
-                           id="password" 
+                           id="regPwd" 
                            placeholder="请输入密码"
                            required>
                     <button type="button" class="show-btn">显示</button>
                 </div>
 
-                <button type="submit" class="btn">登录</button>
+                <!-- 确认密码 -->
+                <div class="password-box">
+                    <input type="password" 
+                           class="input" 
+                           id="confirmPwd" 
+                           placeholder="请再次输入密码"
+                           required>
+                    <button type="button" class="show-btn">显示</button>
+                </div>
 
-                <!-- 注册链接 -->
+                <button type="submit" class="btn">立即注册</button>
+
+                <!-- 登录链接 -->
                 <div class="links">
-                    <a href="taobao-register.html">还没有账号？立即注册</a>
+                    <a href="taobao-in.html">已有账号？立即登录</a>
                 </div>
             </form>
         </div>

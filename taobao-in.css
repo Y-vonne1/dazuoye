@@ -1,249 +1,114 @@
+/* 基础样式 */
 body {
-    background: #f3f2f7;
     margin: 0;
-    font-family: '微软雅黑', Arial, sans-serif;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
 }
 
-。login-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px 60px 0 60px;
+/* 头部样式 */
+.header {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-。logo-link {
+.logo {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
-。logo-img {
-    width: 80px;
-    height: 80px;
-    background: #eee;
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: #ff4400;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 表单容器 */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.form-box {
+    background: white;
+    width: 400px;
+    padding: 30px;
     border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-。logo-text {
-    color: #f40;
-    font-size: 28px;
-    font-weight: bold;
-    margin-left: 8px;
+.form-box h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
 }
 
-。top-feedback {
-    font-size: 14px;
-    color: #888;
-    margin-top: 12px;
-}
-。top-feedback a {
-    color: #f40;
-    margin-left: 12px;
-    text-decoration: none;
-}
-。top-feedback a:hover {
-    text-decoration: underline;
-}
-
-。login-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-。login-box {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    padding: 40px 0;
-    display: flex;
-    width: 840px;
-    min-height: 420px;
-}
-
-.login-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-right: 1px solid #f0f0f0;
-    padding: 0 32px;
-    justify-content: center;
-}
-
-.login-title {
-    font-size: 20px;
-    color: #222;
-    margin-bottom: 24px;
-}
-
-.qr-box {
-    width: 180px;
-    height: 180px;
-    background: #fafafa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    border: 1px solid #eee;
-    margin-bottom: 20px;
-}
-.qr-img {
-    width: 160px;
-    height: 160px;
-    background: #eee;
-}
-
-.open-app-tip {
-    font-size: 13px;
-    color: #888;
-    margin-bottom: 12px;
-}
-.open-app-tip em {
-    color: #f40;
-    font-style: normal;
-}
-
-.qr-help {
-    font-size: 13px;
-    color: #888;
-}
-.qr-help a {
-    color: #f40;
-    text-decoration: none;
-}
-.qr-help a:hover {
-    text-decoration: underline;
-}
-
-.login-divider {
-    width: 1px;
-    background: #f0f0f0;
-    margin: 0 0px;
-}
-
-.login-right {
-    width: 50%;
-    padding: 0 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.tab-header {
-    display: flex;
-    margin-bottom: 24px;
-    border-bottom: 1px solid #f0f0f0;
-    height: 38px;
-}
-.tab {
-    font-size: 18px;
-    color: #888;
-    margin-right: 32px;
-    padding-bottom: 8px;
-    cursor: pointer;
-}
-.tab-active {
-    color: #f40;
-    border-bottom: 2px solid #f40;
-    font-weight: bold;
-}
-
-.tab-content {
-    margin-bottom: 16px;
-}
+/* 输入框样式 */
 .input {
     width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 18px;
-    font-size: 15px;
-    border-radius: 8px;
-    border: 1px solid #e7e7e7;
-    background: #f7f8fa;
-    outline: none;
-    color: #222;
-    box-sizing: border-box;
-}
-.input:focus {
-    border-color: #f40;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* 防止边框影响宽度 */
 }
 
-.input-pwd-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 18px;
+.input:focus {
+    border-color: #ff4400;
+    outline: none; /* 移除默认蓝色外边框 */
 }
-.input-pwd-row .input {
-    flex: 1;
-    margin-bottom: 0;
+
+/* 密码框容器 */
+.password-box {
+    position: relative; /* 用于按钮定位 */
+    margin-bottom: 20px;
 }
-.forget-link, .sms-btn {
-    font-size: 13px;
-    color: #888;
-    margin-left: 12px;
+
+/* 显示/隐藏按钮 */
+.show-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     background: none;
     border: none;
+    color: #666;
     cursor: pointer;
-    outline: none;
-    text-decoration: none;
-}
-.forget-link:hover, .sms-btn:hover {
-    color: #f40;
-    text-decoration: underline;
-}
-.sms-btn {
-    color: #f40;
-    border: 1px solid #f40;
-    border-radius: 6px;
-    padding: 7px 14px;
-    background: #fff;
 }
 
-.login-btn {
+/* 提交按钮 */
+.btn {
     width: 100%;
-    background: #ff5000;
-    color: #fff;
-    font-size: 18px;
+    padding: 12px;
+    background: #ff4400;
+    color: white;
     border: none;
-    border-radius: 8px;
-    padding: 13px 0;
+    border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 12px;
-    margin-top: 8px;
-    font-weight: bold;
-}
-.login-btn:hover {
-    background: #e04800;
+    margin-top: 20px;
 }
 
-.login-footer {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 14px;
-    margin-top: 18px;
-    color: #888;
+.btn:hover {
+    background: #e04000; /* 鼠标悬停颜色 */
 }
-.login-footer a {
-    color: #f40;
-    margin-left: 28px;
+
+/* 底部链接 */
+.links {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.links a {
+    color: #ff4400;
     text-decoration: none;
-}
-.login-footer a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 960px) {
-    .login-box {
-        flex-direction: column;
-        width: 90vw;
-    }
-    .login-left,
-    .login-right {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #f0f0f0;
-        padding: 32px;
-    }
-    .login-right { border-bottom: none; }
-    .login-divider { display: none; }
+    display: block;
+    margin: 10px 0;
 }
