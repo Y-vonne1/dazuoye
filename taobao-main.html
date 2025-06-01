@@ -1,221 +1,239 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
-    <title>淘宝网 - Taobao.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝网-淘！我喜欢</title>
+    <link rel="icon" href="淘宝图标.jpg">
     <link rel="stylesheet" href="taobao-main.css">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .a:hover {
+            color: red;
+        }
+ 
+        .img2 {
+            background-image: url("淘宝登录.jpg");
+            background-position: 10%;
+            background-size: contain;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            float: left;
+            margin: 20px 20px;
+            margin-left: 30px;
+        }
+ 
+        .right1 {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+            left: 30px;
+        }
+ 
+        .right2 {
+            position: relative;
+            left: 30px;
+        }
+ 
+        .right3 {
+            position: relative;
+            top: 20px;
+            text-align: center;
+ 
+        }
+ 
+        .fix {
+            width: 50px;
+            height: 200px;
+            position: fixed;
+            line-height: 40px;
+            right: 0px;
+            top: 200px;
+            border-radius: 5px;
+ 
+            background: rgb(245, 244, 244);
+        }
+ 
+        .fixed {
+            display: block;
+            text-align: center;
+ 
+        }
+    </style>
 </head>
+ 
 <body>
-    <!-- 顶部导航 -->
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <span>中国大陆</span>
-            <span>|</span>
-            <a href="taobao-in.html">亲，请登录</a>
-            <span>|</span>
-            <a href="taobao-register.html">免费注册</a>
-        </div>
-        <div class="top-bar-right">
-            <a href="#">已买到的宝贝</a>
-            <a href="#">我的淘宝</a>
-            <a href="#">购物车</a>
-            <a href="#">千牛卖家中心</a>
-        </div>
+    <div class="headmessage clearfix">
+        <ul class="fl">
+            <li>
+                <span>中国大陆</span>
+                <span class="iconfont arrow">&#xe601;</span>
+            </li>
+            <li>
+                <a href="#" class="login">亲，请登录</a>
+                <a href="#" class="a">免费注册</a>
+            </li>
+            <li>
+                <a href="#" class="a">手机逛淘宝</a>
+            </li>
+        </ul>
+ 
+        <ul class="fr">
+            <li>
+                <a href="#">我的淘宝</a>
+                <span class="iconfont arrow">&#xe601;</span>
+            </li>
+            <li>
+                <span class="iconfont" style="font-size: 20px;">&#xe63f;</span>
+                <a href="#">购物车</a>
+                <strong>0</strong>
+                <span class="iconfont arrow">&#xe601;</span>
+            </li>
+            <li>
+                <a href="#" class="a"><span class="iconfont a">&#xe870;</span>收藏夹</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">商品分类</a>
+            </li>
+            <li>|</li>
+            <li>
+                <a href="#">千牛卖家中心</a>
+                <span class="iconfont arrow">&#xe601;</span>
+            </li>
+            <li>
+                <a href="#">联系客服</a>
+                <span class="iconfont arrow">&#xe601;</span>
+ 
+            </li>
+            <li>
+                <span class="iconfont">&#xeaf1;</span>
+                <a href="#">网站导航</a>
+                <span class="iconfont arrow">&#xe601;</span>
+            </li>
+ 
+        </ul>
     </div>
-    
-    <!-- Logo和搜索栏 -->
-    <div class="header">
-        <div class="logo">
-            <a href="taobao-main.html"><img src="图片/Taobao.png"></a>            
+ 
+ 
+ 
+ 
+    <div class="headseach">
+        <div class="left fl"><a href="#" class="taobao">淘宝</a></div>
+        <div class="right fr" style="color: #f40; font-size: 20px;">手机淘宝<div class="iconfont"
+                style="color: #f40; font-size: 50px; margin: -10px 15px;">&#xe628;</div>
         </div>
-        <div class="search-bar">
-            <form action="search.html" method="GET">
-                <input type="text" name="q" placeholder="宝贝 今年爆款女装上衣">
-                <button type="submit" class="search-btn">搜索</button>
-            </form>
-            <button class="voice-btn">搜同款</button>
-            <div class="search-links">
-                <a href="#">天猫</a>
-                <a href="#">闲鱼集市</a>
-                <a href="#">天猫国际</a>
-                <a href="#" class="coupon-center">领券中心</a>
+        <form action="#">
+            <div class="center clearfix fl">
+                <div class="searchbox">
+                    <input type="text" placeholder="秋季流行着装">
+                    <i class="iconfont fl" style="margin:5px 0 10px 5px; font-size:20px;">&#xe60d;</i>
+                    <span class="iconfont fr" style="margin:7px 15px 10px 5px;">&#xe609;</span>
+                    <div class="btn fl">
+                        <button>搜索</button>
+                    </div>
+                </div>
+ 
             </div>
-        </div>
-        <div class="header-side">
-            <a href="#"" class="red-envelope">
-                <img src="" alt="红包">
-                <span>天天领红包</span>
-                <span class="open">开启淘江湖</span>
+        </form>
+        <div data-sg-type="hotWord" data-spm-ab="fline"
+            data-spm-ab-max-idx="15" class="hotword">
+            <a class="item" style="color:#f52743;font-weight:500; margin: 0 5px;"
+                href="#">
+                每满300减30
+            </a><a class="item" style="color:#f52743;font-weight:500;margin: 0 5px;"
+                href="#">
+                好物热销榜
+            </a><a class="item" style="color:#f52743;font-weight:500;margin: 0 5px;"
+                href="#">
+                抽iPhone
+            </a><a class="item" style="margin: 0 5px;"
+                href="#">
+                男士外套秋冬季
+            </a><a class="item" style="margin: 0 5px;"
+                href="#">
+                羊羔毛外套
+            </a><a class="item" style="margin: 0 5px;"
+                href="#">
+                长款羽绒服
+            </a><a class="item" style="margin: 0 5px;"
+                href="#">
+                fogal丝袜
+            </a><a class="item" style="margin: 0 5px;"
+                href="#">
+                jansport双肩包
             </a>
+ 
         </div>
     </div>
-    
-    <!-- 主体部分 -->
-    <div class="main-content">
-        <!-- 左侧分类栏 -->
-        <div class="sidebar">
-            <div class="category-title">分类 <span class="new">NEW</span></div>
-            <ul class="category-list">
-                <li><a href="#">爆款低至9折</a></li>
-                <li><a href="#">抢酷热钜惠</a></li>
-                <li><a href="#">电器/配件/办公/文具</a></li>
-                <li><a href="#">家电/手机/通讯/数码</a></li>
-                <li><a href="#">工装/五金/农机/园艺</a></li>
-                <li><a href="#">家居/家纺/家装/厨具</a></li>
-                <li><a href="#">女装/男装/内衣/配饰</a></li>
-                <li><a href="#">女鞋/男鞋/童鞋/箱包</a></li>
-                <li><a href="#">母婴/玩具/童装/户外</a></li>
-                <li><a href="#">珠宝/手表/文玩/收藏</a></li>
-                <li><a href="#">汽车/配件/用品/改装</a></li>
-                <li><a href="#">美妆/个护/保健/日用</a></li>
-                <li><a href="#">运动/户外/乐器/宠物</a></li>
+ 
+    </div>
+ 
+ 
+ 
+    <div class="nav">
+        <a href="#" style="color: #f40;">天猫</a>
+        <span class="iconfont"
+            style="font-size: 20px; margin:px -15px 0 5px ;position: relative; top: -20px; left: 20px;">&#xe897;</span>
+        <a href="#" style="color: #f40; ">淘宝直播</a>
+        <img src="新.svg" alt="" style="width: 20px; margin: -41px -15px 0 15px;">
+        <a href="#" style="color: #f40;">淘宝企业购</a>
+        <a href="#" style="color: #f40;">司法拍卖</a>
+        <a href="#" style="color: green;">天猫超市</a>
+        <span class="iconfont"
+            style="margin:800px -15px -70px 5px ;font-size:30px ;position: relative; top: -15px;">&#xe876;</span>
+        <a href="#">闲鱼集市</a>
+        <a href="#">天猫国际</a>
+    </div>
+ 
+ 
+    <div class="screen clearfix">
+        <div class="sidenav fl">
+            <ul>
+                <li> 电脑 / 配件 / 办公 / 文具<span class="iconfont">&#xe602;</span></li>
+                <li> 定妆 / 个护 / 家清香氛<span class="iconfont">&#xe602;</span></li>
+                <li>娱乐图书 / 乐器 / 鲜花<span class="iconfont">&#xe602;</span></li>
+                <li>工业品 / 商业农业 / 定制<span class="iconfont">&#xe602;</span></li>
+                <li>母婴 / 童装 / 玩具 / 宠物<span class="iconfont">&#xe602;</span></li>
+                <li>食品 / 生鲜 / 酒类 / 健康<span class="iconfont">&#xe602;</span></li>
+                <li>汽车 / 珠宝 / 文玩 / 箱包<span class="iconfont">&#xe602;</span></li>
+                <li>女鞋 / 男鞋 / 运动 / 户外<span class="iconfont">&#xe602;</span></li>
+                <li>女装 / 男装 / 内衣 / 配饰<span class="iconfont">&#xe602;</span></li>
+                <li>家具 / 家装 / 家居 / 厨具<span class="iconfont">&#xe602;</span></li>
+                <li>家 / 手机 / 通信 / 数码<span class="iconfont">&#xe602;</span></li>
             </ul>
+ 
+ 
+ 
         </div>
-        
-        <!-- 新增: 右侧广告栏放到登录栏左侧 -->
-        <div class="bottom-ads vertical-ads">
-            <div class="ad-item">
-                <img src="" alt="广告图">
-                <div class="ad-desc">双层加粗丝滑布</div>
-            </div>
-            <div class="ad-item">
-                <img src="" alt="广告图">
-                <div class="ad-desc">网易游戏 1元20个</div>
-            </div>
-            <div class="ad-item">
-                <img src="" alt="广告图">
-                <div class="ad-desc">滑行飞机模型</div>
-            </div>
-            <div class="ad-item">
-                <img src="" alt="广告图">
-                <div class="ad-desc">皂牌肥皂</div>
-            </div>
-            <div class="ad-item">
-                <img src="" alt="广告图">
-                <div class="ad-desc">月卡充值</div>
-            </div>
-            <div class="ad-item">
-                <img src="" alt="广告图">
-                <div class="ad-desc">官方专密产品</div>
-            </div>
+ 
+        <div class="signin fr">
+            <div class="img2"></div>
+            <div class="right1 a">晚上好</div>
+            <div class="right2">注册 | 开店</div>
+            <strong style="position: relative; left: -40px ;top:10px; font-size: 14px;">登录淘宝后更多精彩</strong>
+            <div class="right3">
+                嘿！更懂你的推荐，更便捷的搜索</div>
+            <button
+                style="background-color: #ff5000; border: none; color: #fff; border-radius: 5px; width: 200px; height: 40px; position: absolute; top:150px; left: 0; right: 0; margin: 0 auto;">立即登录</button>
+            <img src="signin.png" style="width:231px; position: relative; top: 70px;" alt="">
         </div>
-
-        <!-- 右侧登录栏 -->
-        <div class="sidebar-right">
-            <!-- 用户问候 -->
-            <a href="user-profile.html" class="user-greeting">
-                <span class="greeting-icon">
-                    <img src="图片/头像.png" alt="用户头像">
-                </span>
-                <span>下午好</span>
-            </a>
-
-            <!-- 登录提示 -->
-            <div class="login-prompt">
-                <div>登录淘宝查看更多精彩</div>
-                <a href="login.html" class="login-btn">
-                    <img src="" alt="立即登录">
-                </a>
-            </div>
-
-            <!-- 快速链接 -->
-            <div class="quick-links">
-                <a href="pending-payment.html" class="link-item">
-                    <img src="图片/收藏夹.png" alt="收藏夹">
-                    <span>收藏夹</span>
-                </a>
-                <a href="cart.html" class="link-item">
-                    <img src="图片/购物车.png" alt="购物车">
-                    <span>购物车</span>
-                </a>
-            </div>
-
-            <!-- 金币推广 -->
-            <div class="coin-promo">
-                <a href="coin-center.html">
-                    <img src="图片/金币.png" alt="金币兑换">
-                </a>
-            </div>
-        </div>
-    
-        <!-- 中部内容区 -->
-        <div class="center-content">
-            <!-- 轮播图 -->
-            <div class="carousel">
-                <div class="carousel-images">
-                    <img src="https://via.placeholder.com/1200x400?text=广告1" alt="广告1">
-                    <img src="https://via.placeholder.com/1200x400?text=广告2" alt="广告2">
-                    <img src="https://via.placeholder.com/1200x400?text=广告3" alt="广告3">
-                    <img src="https://via.placeholder.com/1200x400?text=广告4" alt="广告4">
-                </div>
-                <div class="carousel-dots"></div>
-                <button class="carousel-prev" aria-label="上一张"><</button>
-                <button class="carousel-next" aria-label="下一张">></button>
-            </div>
-            <!-- 导航 -->
-            <div class="main-nav">
-                <a href="#">天猫</a>
-                <a href="#">淘宝直播</a>
-                <a href="#">司法拍卖</a>
-                <a href="#">菜鸟超市</a>
-                <a href="#">闲鱼集市</a>
-                <a href="#">天猫国际</a>
-            </div>
-            <!-- 商品推荐 -->
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="大作业\物品\阿胶.html" alt="商品图片">
-                    <div class="product-title">阿胶</div>
-                    <div class="product-price">¥19.9</div>
-                    <div class="product-desc">火爆热卖中</div>
-                </div>
-                <div class="product-item">
-                    <img src="" alt="商品图片">
-                    <div class="product-title">商品名称</div>
-                    <div class="product-price">¥6300</div>
-                    <div class="product-desc">火爆热卖中</div>
-                </div>
-                <div class="product-item">
-                    <img src="" alt="商品图片">
-                    <div class="product-title">商品名称</div>
-                    <div class="product-price">¥11999</div>
-                    <div class="product-desc">火爆热卖中</div>
-                </div>
-                <div class="product-item">
-                    <img src="" alt="商品图片">
-                    <div class="product-title">商品名称</div>
-                    <div class="product-price">¥3199</div>
-                    <div class="product-desc">火爆热卖中</div>
-                </div>
-            </div>
-            <!-- 淘宝直播等推荐 -->
-            <div class="recommend-list">
-                <div class="recommend-item">
-                    <div class="recommend-title">淘宝直播</div>
-                    <img src="" alt="直播封面">
-                    <div class="recommend-anchor">主播昵称</div>
-                </div>
-                <div class="recommend-item">
-                    <div class="recommend-title">淘宝直播</div>
-                    <img src="" alt="直播封面">
-                    <div class="recommend-anchor">主播昵称</div>
-                </div>
-            </div>
-            <!-- 淘宝沙杀等推荐 -->
-            <div class="other-recommend-list">
-                <div class="other-recommend-item">
-                    <div class="other-title">淘宝沙杀</div>
-                    <img src="" alt="商品图片">
-                    <div class="other-price">¥2599</div>
-                </div>
-                <div class="other-recommend-item">
-                    <div class="other-title">商品名称</div>
-                    <img src="" alt="商品图片">
-                    <div class="other-price">¥725</div>
-                </div>
-            </div>
+ 
+        <div class="img1">
+            <img src="屏幕截图 2024-11-23 192912.png" alt="" style="width: 600px;">
         </div>
     </div>
-    <script src="taobao-main.js"></script>
+ 
+    <div class="fix">
+        <a href="#" class="fixed">官方插件</a>
+        <a href="#" class="fixed">消息</a>
+        <a href="#" class="fixed">购物车</a>
+        <a href="#" class="fixed">官方客服</a>
+        <a href="#" class="fixed">反馈</a>
+    </div>
 </body>
+ 
 </html>

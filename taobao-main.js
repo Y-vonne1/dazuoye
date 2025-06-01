@@ -1,72 +1,60 @@
-// ================= 轮播图功能 =================
 const CAROUSEL_INTERVAL = 5000;
 const carousel = document.querySelector('.carousel');
-const images = carousel?.querySelectorAll('.carousel-images img');
-const dotsContainer = carousel?.querySelector('.carousel-dots');
-const prevBtn = carousel?.querySelector('.carousel-prev');
-const nextBtn = carousel?.querySelector('.carousel-next');
+const slides = document.querySelectorAll('.carousel-images a')
+const dots = document.querySelectorAll('.carousel-dot');
+let currentSlide = 0;
+let autoPlay;
 
-let currentIndex = 0;
-let autoPlayTimer;
-
-// 初始化轮播图
-function initializeCarousel() {
-    if (!images || images.length === 0) return;
-
-    // 创建指示点
-    images.forEach((_, index) => {
-        const dot = document.createElement('div');
-        dot.className = 'carousel-dot';
-        dot.addEventListener('click', () => switchSlide(index));
-        dotsContainer.appendChild(dot);
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
     });
-
-    // 设置初始状态
-    images[0].classList.add('active');
-    dotsContainer.children[0].classList.add('active');
-    startAutoPlay();
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
 }
 
-// 切换幻灯片
-function switchSlide(newIndex) {
-    // 移除当前激活状态
-    images[currentIndex].classList.remove('active');
-    dotsContainer.children[currentIndex].classList.remove('active');
-
-    // 处理边界
-    newIndex = (newIndex + images.length) % images.length;
-
-    // 更新状态
-    currentIndex = newIndex;
-    images[currentIndex].classList.add('active');
-    dotsContainer.children[currentIndex].classList.add('active');
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
 }
 
-// 自动播放控制
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
 function startAutoPlay() {
-    autoPlayTimer = setInterval(() => switchSlide(currentIndex + 1), CAROUSEL_INTERVAL);
+    autoPlay = setInterval(nextSlide, CAROUSEL_INTERVAL);
 }
 
-// 事件监听
-if (prevBtn && nextBtn) {
-    prevBtn.addEventListener('click', () => {
-        clearInterval(autoPlayTimer);
-        switchSlide(currentIndex - 1);
+// 初始化事件
+document.querySelector('.carousel-next').addEventListener('click', () => {
+    clearInterval(autoPlay);
+    nextSlide();
+    startAutoPlay();
+});
+
+document.querySelector('.carousel-prev').addEventListener('click', () => {
+    clearInterval(autoPlay);
+    prevSlide();
+    startAutoPlay();
+});
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        clearInterval(autoPlay);
+        currentSlide = index;
+        showSlide(currentSlide);
         startAutoPlay();
     });
+});
 
-    nextBtn.addEventListener('click', () => {
-        clearInterval(autoPlayTimer);
-        switchSlide(currentIndex + 1);
-        startAutoPlay();
-    });
-}
-
-if (carousel) {
-    carousel.addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
-    carousel.addEventListener('mouseleave', startAutoPlay);
-}
-
+// 初始化轮播
+startAutoPlay();
+carousel.addEventListener('mouseenter', () => clearInterval(autoPlay));
+carousel.addEventListener('mouseleave', startAutoPlay);
+    
 // ================= 搜索功能 =================
 const searchForm = document.querySelector('.search-bar form');
 const searchInput = document.querySelector('.search-bar input');
