@@ -18,11 +18,6 @@ body {
     text-decoration: none;
 }
 
-.logo-img {
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-}
 
 .logo-text {
     color: #ff4400;
@@ -69,14 +64,13 @@ body {
 /* 密码框容器 */
 .password-box {
     position: relative; /* 用于按钮定位 */
-    margin-bottom: 20px;
 }
 
 /* 显示/隐藏按钮 */
 .show-btn {
     position: absolute;
-    right: 10px;
-    top: 50%;
+    right: 1px;
+    top: 20px;
     transform: translateY(-50%);
     background: none;
     border: none;

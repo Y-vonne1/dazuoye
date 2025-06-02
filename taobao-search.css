@@ -1,0 +1,169 @@
+/* 基础样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* 搜索框样式 */
+.search-box {
+    display: flex;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+#search-form {
+    display: flex;
+    flex-grow: 1;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ff0036;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+#search-form button {
+    padding: 10px 20px;
+    background-color: #ff0036;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-form button:hover {
+    background-color: #ff5000;
+}
+
+/* 分类标题样式 */
+#category-title {
+    padding: 10px 15px;
+    background-color: #fff7f4;
+    color: #ff0036;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none;
+}
+
+/* 筛选栏样式 */
+.filter-bar {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.filter {
+    padding: 5px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.filter.active {
+    background-color: #ff0036;
+    color: white;
+}
+
+/* 搜索结果样式 */
+#search-results {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.product-item {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.product-image {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-title {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.product-price {
+    color: #ff0036;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product-sales {
+    color: #999;
+    font-size: 12px;
+}
+
+.no-results {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
+
+/* 分页样式 - 初学者友好版 */
+#pagination {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 10px;
+    gap: 5px; /* 按钮间距 */
+}
+
+/* 基础按钮样式 */
+.page-btn {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* 当前选中页的样式 */
+.page-btn.active {
+    background-color: #ff0036;
+    color: white;
+    border-color: #ff0036;
+}
+
+/* 不可点击按钮的样式 */
+.page-btn.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none; /* 禁止点击事件 */
+}
+
+/* 鼠标悬停效果 */
+.page-btn:not(.active):hover {
+    background-color: #f5f5f5;
+}

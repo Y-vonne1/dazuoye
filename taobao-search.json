@@ -1,0 +1,312 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "爆款女装上衣",
+            "desc": "2023新款时尚女装上衣，百搭款式，多种颜色可选",
+            "price": 129.9,
+            "sales": 5234,
+            "image": "图片/女装.jpg",
+            "shopName": "时尚女装旗舰店",
+            "category": "女装"
+        },
+        {
+            "id": 2,
+            "name": "夏季男装新款T恤",
+            "desc": "纯棉舒适T恤，透气吸汗，多色可选",
+            "price": 59.9,
+            "sales": 3210,
+            "image": "图片/T恤.jpg",
+            "shopName": "潮流服饰专卖",
+            "category": "男装"
+        },
+        {
+            "id": 3,
+            "name": "智能手机",
+            "desc": "旗舰机型，高性能处理器",
+            "price": 3999.0,
+            "sales": 4123,
+            "image": "图片/手机.jpg",
+            "shopName": "数码旗舰店",
+            "category": "手机"
+        },
+        {
+            "id": 4,
+            "name": "笔记本电脑",
+            "desc": "轻薄本，超长续航",
+            "price": 5999.0,
+            "sales": 1876,
+            "image": "图片/笔记本.jpg",
+            "shopName": "电脑专卖",
+            "category": "电脑"
+        },
+        {
+            "id": 5,
+            "name": "智能电视",
+            "desc": "4K超高清",
+            "price": 3199,
+            "sales": 987,
+            "image": "图片/电视.jpg",
+            "shopName": "家电城",
+            "category": "家电"
+        },
+        {
+            "id": 6,
+            "name": "阿胶",
+            "desc": "火爆热卖中",
+            "price": 19.9,
+            "sales": 2567,
+            "image": "图片/阿胶.jpg",
+            "shopName": "滋补养生馆",
+            "category": "滋补保健"
+        },
+        {
+            "id": 7,
+            "name": "蕾丝内衣套装",
+            "desc": "舒适透气，多款可选",
+            "price": 89.9,
+            "sales": 1562,
+            "image": "图片/内衣.jpg",
+            "shopName": "内衣专营店",
+            "category": "内衣"
+        },
+        {
+            "id": 8,
+            "name": "时尚运动鞋",
+            "desc": "轻便舒适，防滑耐磨",
+            "price": 199.0,
+            "sales": 2345,
+            "image": "图片/运动鞋.jpg",
+            "shopName": "鞋类专卖",
+            "category": "鞋靴"
+        },
+        {
+            "id": 9,
+            "name": "商务旅行箱",
+            "desc": "大容量，耐磨防刮",
+            "price": 299.0,
+            "sales": 876,
+            "image": "图片/旅行箱.jpg",
+            "shopName": "箱包世界",
+            "category": "箱包"
+        },
+        {
+            "id": 10,
+            "name": "时尚太阳镜",
+            "desc": "防紫外线，多种款式",
+            "price": 129.0,
+            "sales": 1567,
+            "image": "图片/太阳镜.jpg",
+            "shopName": "配饰专家",
+            "category": "配饰"
+        },
+        {
+            "id": 11,
+            "name": "专业单反相机",
+            "desc": "高画质，快速对焦",
+            "price": 5899.0,
+            "sales": 432,
+            "image": "图片/相机.jpg",
+            "shopName": "摄影器材",
+            "category": "摄影摄像"
+        },
+        {
+            "id": 12,
+            "name": "智能手环",
+            "desc": "心率监测，运动追踪",
+            "price": 199.0,
+            "sales": 2876,
+            "image": "图片/手环.jpg",
+            "shopName": "智能生活",
+            "category": "智能设备"
+        },
+        {
+            "id": 13,
+            "name": "激光打印机",
+            "desc": "高速打印，无线连接",
+            "price": 899.0,
+            "sales": 765,
+            "image": "图片/打印机.jpg",
+            "shopName": "办公设备",
+            "category": "办公设备"
+        },
+        {
+            "id": 14,
+            "name": "保湿面霜",
+            "desc": "深层滋养，24小时保湿",
+            "price": 129.0,
+            "sales": 3456,
+            "image": "图片/面霜.jpg",
+            "shopName": "美妆护肤",
+            "category": "护肤"
+        },
+        {
+            "id": 15,
+            "name": "口红套装",
+            "desc": "多种色号，持久不脱妆",
+            "price": 159.0,
+            "sales": 2345,
+            "image": "图片/口红.jpg",
+            "shopName": "彩妆世界",
+            "category": "彩妆"
+        },
+        {
+            "id": 16,
+            "name": "淡香水",
+            "desc": "清新花香，持久留香",
+            "price": 239.0,
+            "sales": 1234,
+            "image": "图片/香水.jpg",
+            "shopName": "香水专卖",
+            "category": "香水"
+        },
+        {
+            "id": 17,
+            "name": "护发精油",
+            "desc": "修复受损发质",
+            "price": 69.0,
+            "sales": 1876,
+            "image": "图片/护发精油.jpg",
+            "shopName": "美发专家",
+            "category": "美发护发"
+        },
+        {
+            "id": 18,
+            "name": "电动牙刷",
+            "desc": "深层清洁，多种模式",
+            "price": 199.0,
+            "sales": 2567,
+            "image": "图片/电动牙刷.jpg",
+            "shopName": "个人护理",
+            "category": "个人护理"
+        },
+        {
+            "id": 19,
+            "name": "男士洁面乳",
+            "desc": "控油保湿，清爽不紧绷",
+            "price": 59.0,
+            "sales": 1567,
+            "image": "图片/洁面乳.jpg",
+            "shopName": "男士护理",
+            "category": "男士护理"
+        },
+        {
+            "id": 20,
+            "name": "纯棉四件套",
+            "desc": "舒适透气，多种花色",
+            "price": 199.0,
+            "sales": 2345,
+            "image": "图片/四件套.jpg",
+            "shopName": "家纺世界",
+            "category": "家纺"
+        },
+        {
+            "id": 21,
+            "name": "实木餐桌",
+            "desc": "简约设计，坚固耐用",
+            "price": 1299.0,
+            "sales": 456,
+            "image": "图片/餐桌.jpg",
+            "shopName": "家具城",
+            "category": "家具"
+        },
+        {
+            "id": 22,
+            "name": "装饰画",
+            "desc": "现代风格，多种尺寸",
+            "price": 129.0,
+            "sales": 765,
+            "image": "图片/装饰画.jpg",
+            "shopName": "家居装饰",
+            "category": "家居装饰"
+        },
+        {
+            "id": 23,
+            "name": "不粘锅套装",
+            "desc": "健康不粘，易清洗",
+            "price": 199.0,
+            "sales": 1234,
+            "image": "图片/不粘锅.jpg",
+            "shopName": "厨房用品",
+            "category": "厨具"
+        },
+        {
+            "id": 24,
+            "name": "收纳箱",
+            "desc": "大容量，可折叠",
+            "price": 59.0,
+            "sales": 1876,
+            "image": "图片/收纳箱.jpg",
+            "shopName": "收纳专家",
+            "category": "收纳"
+        },
+        {
+            "id": 25,
+            "name": "扫地机器人",
+            "desc": "智能规划，强力吸尘",
+            "price": 1299.0,
+            "sales": 765,
+            "image": "图片/扫地机器人.jpg",
+            "shopName": "清洁用品",
+            "category": "清洁用品"
+        },
+        {
+            "id": 26,
+            "name": "婴儿奶粉",
+            "desc": "营养均衡，易消化",
+            "price": 199.0,
+            "sales": 2345,
+            "image": "图片/奶粉.jpg",
+            "shopName": "母婴用品",
+            "category": "奶粉"
+        },
+        {
+            "id": 27,
+            "name": "纸尿裤",
+            "desc": "超薄透气，防漏设计",
+            "price": 89.0,
+            "sales": 3456,
+            "image": "图片/纸尿裤.jpg",
+            "shopName": "母婴用品",
+            "category": "尿裤"
+        },
+        {
+            "id": 28,
+            "name": "儿童T恤",
+            "desc": "纯棉材质，多种图案",
+            "price": 39.0,
+            "sales": 1567,
+            "image": "图片/儿童T恤.jpg",
+            "shopName": "童装专卖",
+            "category": "童装"
+        },
+        {
+            "id": 29,
+            "name": "积木玩具",
+            "desc": "益智开发，安全材质",
+            "price": 99.0,
+            "sales": 2345,
+            "image": "图片/积木.jpg",
+            "shopName": "玩具世界",
+            "category": "玩具"
+        },
+        {
+            "id": 30,
+            "name": "孕妇装",
+            "desc": "舒适宽松，时尚设计",
+            "price": 129.0,
+            "sales": 765,
+            "image": "图片/孕妇装.jpg",
+            "shopName": "孕产用品",
+            "category": "孕产用品"
+        }
+    ],
+    "categories": [
+        "女装", "男装", "内衣", "鞋靴", "箱包", "配饰",
+        "手机", "电脑", "家电", "摄影摄像", "智能设备", "办公设备",
+        "护肤", "彩妆", "香水", "美发护发", "个人护理", "男士护理",
+        "家纺", "家具", "家居装饰", "厨具", "收纳", "清洁用品",
+        "奶粉", "尿裤", "童装", "玩具", "孕产用品", "儿童用品",
+        "休闲食品", "酒水饮料", "生鲜水果", "粮油调味", "滋补保健", "地方特产"
+    ]
+}

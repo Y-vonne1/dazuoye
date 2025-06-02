@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝搜索</title>
+    <link rel="stylesheet" href="taobao-search.css">
+</head>
+<body>
+    <!-- 搜索栏 -->
+    <div class="search-box">
+        <div class="logo">
+            <a href="taobao-main.html"><img src="图片/Taobao.png" alt="淘宝"></a>
+        </div>
+        <form id="search-form" action="taobao-search.html" method="GET">
+            <input type="text" id="search-input" name="q" placeholder="请输入商品名称" value="">
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+    
+    <!-- 分类标题 -->
+    <div id="category-title"></div>
+    
+    <!-- 筛选栏 -->
+    <div class="filter-bar">
+        <div class="filter active">综合</div>
+        <div class="filter">销量</div>
+        <div class="filter">价格从低到高</div>
+        <div class="filter">价格从高到低</div>
+    </div>
+    
+    <!-- 搜索结果展示区 -->
+    <div id="search-results">
+        <!-- 这里会通过JavaScript动态显示搜索结果 -->
+        <div class="no-results">没有找到相关商品</div>
+    </div>
+    
+    <!-- 分页控件 -->
+    <div id="pagination">
+        <button class="page-btn">上一页</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">下一页</button>
+    </div>
+    
+    <script src="taobao-search.js"></script>
+</body>
+</html>
