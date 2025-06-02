@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝网 - Taobao.com</title>
+    <link rel="stylesheet" href="taobao-main.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span>中国大陆</span>
+            <span>|</span>
+            <a href="taobao-in.html">亲，请登录</a>
+            <span>|</span>
+            <a href="taobao-register.html">免费注册</a>
+        </div>
+        <div class="top-bar-right">
+            <a href="#">已买到的宝贝</a>
+            <a href="#">我的淘宝</a>
+            <a href="#">购物车</a>
+            <a href="#">千牛卖家中心</a>
+        </div>
+    </div>
+    
+    <!-- Logo和搜索栏 -->
+    <div class="header">
+        <div class="logo">
+            <a href="taobao-main.html"><img src="图片/Taobao.png" alt="淘宝logo"></a>            
+        </div>
+        <div class="search-bar">
+            <form id="search-form" action="taobao-search.html" method="GET">
+                <input type="text" id="search-input" name="q" placeholder="宝贝 今年爆款女装上衣">
+                <button type="submit" class="search-btn">搜索</button>
+            </form>
+            <button class="voice-btn">搜同款</button>
+            <div class="search-links">
+                <a href="#">天猫</a>
+                <a href="#">闲鱼集市</a>
+                <a href="#">天猫国际</a>
+                <a href="#" class="coupon-center">领券中心</a>
+            </div>
+        </div>
+        <div class="header-side">
+            <a href="#" class="red-envelope">
+                <img src="图片/红包.png" alt="红包">
+                <span>天天领红包</span>
+                <span class="open">开启淘江湖</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- 主体部分 -->
+    <div class="main-content">
+        <!-- 左侧分类栏 - 优化后的版本 -->
+        <div class="sidebar">
+            <div class="category-title">全部分类 <span class="new">NEW</span></div>
+            <ul class="category-list">
+                <!-- 服饰鞋包分类组 -->
+                <li class="category-group">
+                    <div class="group-title">
+                        <span class="arrow-icon">▶</span>
+                        服饰鞋包
+                    </div>
+                    <ul class="sub-category">
+                        <li><a href="#">女装</a></li>
+                        <li><a href="#">男装</a></li>
+                        <li><a href="#">内衣</a></li>
+                        <li><a href="#">鞋靴</a></li>
+                        <li><a href="#">箱包</a></li>
+                        <li><a href="#">配饰</a></li>
+                    </ul>
+                </li>
+                
+                <!-- 数码家电分类组 -->
+                <li class="category-group">
+                    <div class="group-title">
+                        <span class="arrow-icon">▶</span>
+                        数码家电
+                    </div>
+                    <ul class="sub-category">
+                        <li><a href="#">手机</a></li>
+                        <li><a href="#">电脑</a></li>
+                        <li><a href="#">家电</a></li>
+                        <li><a href="#">摄影摄像</a></li>
+                        <li><a href="#">智能设备</a></li>
+                        <li><a href="#">办公设备</a></li>
+                    </ul>
+                </li>
+                
+                <!-- 美妆个护分类组 -->
+                <li class="category-group">
+                    <div class="group-title">
+                        <span class="arrow-icon">▶</span>
+                        美妆个护
+                    </div>
+                    <ul class="sub-category">
+                        <li><a href="#">护肤</a></li>
+                        <li><a href="#">彩妆</a></li>
+                        <li><a href="#">香水</a></li>
+                        <li><a href="#">美发护发</a></li>
+                        <li><a href="#">个人护理</a></li>
+                        <li><a href="#">男士护理</a></li>
+                    </ul>
+                </li>
+                
+                <!-- 家居生活分类组 -->
+                <li class="category-group">
+                    <div class="group-title">
+                        <span class="arrow-icon">▶</span>
+                        家居生活
+                    </div>
+                    <ul class="sub-category">
+                        <li><a href="#">家纺</a></li>
+                        <li><a href="#">家具</a></li>
+                        <li><a href="#">家居装饰</a></li>
+                        <li><a href="#">厨具</a></li>
+                        <li><a href="#">收纳</a></li>
+                        <li><a href="#">清洁用品</a></li>
+                    </ul>
+                </li>
+                
+                <!-- 母婴玩具分类组 -->
+                <li class="category-group">
+                    <div class="group-title">
+                        <span class="arrow-icon">▶</span>
+                        母婴玩具
+                    </div>
+                    <ul class="sub-category">
+                        <li><a href="#">奶粉</a></li>
+                        <li><a href="#">尿裤</a></li>
+                        <li><a href="#">童装</a></li>
+                        <li><a href="#">玩具</a></li>
+                        <li><a href="#">孕产用品</a></li>
+                        <li><a href="#">儿童用品</a></li>
+                    </ul>
+                </li>
+                
+                <!-- 食品生鲜分类组 -->
+                <li class="category-group">
+                    <div class="group-title">
+                        <span class="arrow-icon">▶</span>
+                        食品生鲜
+                    </div>
+                    <ul class="sub-category">
+                        <li><a href="#">休闲食品</a></li>
+                        <li><a href="#">酒水饮料</a></li>
+                        <li><a href="#">生鲜水果</a></li>
+                        <li><a href="#">粮油调味</a></li>
+                        <li><a href="#">滋补保健</a></li>
+                        <li><a href="#">地方特产</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- 中部内容区 -->
+        <div class="center-content">
+            <!-- 轮播图 -->
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="https://via.placeholder.com/1200x400?text=广告1" alt="广告1">
+                    <img src="https://via.placeholder.com/1200x400?text=广告2" alt="广告2">
+                    <img src="https://via.placeholder.com/1200x400?text=广告3" alt="广告3">
+                    <img src="https://via.placeholder.com/1200x400?text=广告4" alt="广告4">
+                </div>
+                <div class="carousel-dots"></div>
+                <button class="carousel-prev" aria-label="上一张">‹</button>
+                <button class="carousel-next" aria-label="下一张">›</button>
+            </div>
+            
+            <!-- 导航 -->
+            <div class="main-nav">
+                <a href="#">天猫</a>
+                <a href="#">淘宝直播</a>
+                <a href="#">司法拍卖</a>
+                <a href="#">菜鸟超市</a>
+                <a href="#">闲鱼集市</a>
+                <a href="#">天猫国际</a>
+            </div>
+            
+            <!-- 商品推荐 -->
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="图片/阿胶.jpg" alt="阿胶">
+                    <div class="product-title">阿胶</div>
+                    <div class="product-price">¥19.9</div>
+                    <div class="product-desc">火爆热卖中</div>
+                </div>
+                <div class="product-item">
+                    <img src="图片/手机.jpg" alt="智能手机">
+                    <div class="product-title">智能手机</div>
+                    <div class="product-price">¥6300</div>
+                    <div class="product-desc">旗舰机型</div>
+                </div>
+                <div class="product-item">
+                    <img src="图片/笔记本.jpg" alt="笔记本电脑">
+                    <div class="product-title">笔记本电脑</div>
+                    <div class="product-price">¥11999</div>
+                    <div class="product-desc">高性能游戏本</div>
+                </div>
+                <div class="product-item">
+                    <img src="图片/电视.jpg" alt="智能电视">
+                    <div class="product-title">智能电视</div>
+                    <div class="product-price">¥3199</div>
+                    <div class="product-desc">4K超高清</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 右侧边栏 -->
+        <div class="sidebar-right">
+            <!-- 用户问候 -->
+            <a href="user-profile.html" class="user-greeting">
+                <span class="greeting-icon">
+                    <img src="图片/头像.png" alt="用户头像">
+                </span>
+                <span>下午好</span>
+            </a>
+
+            <!-- 登录提示 -->
+            <div class="login-prompt">
+                <div>登录淘宝查看更多精彩</div>
+                <a href="login.html" class="login-btn">立即登录</a>
+            </div>
+
+            <!-- 快速链接 -->
+            <div class="quick-links">
+                <a href="pending-payment.html" class="link-item">
+                    <img src="图片/收藏夹.png" alt="收藏夹">
+                    <span>收藏夹</span>
+                </a>
+                <a href="cart.html" class="link-item">
+                    <img src="图片/购物车.png" alt="购物车">
+                    <span>购物车</span>
+                </a>
+            </div>
+
+            <!-- 金币推广 -->
+            <div class="coin-promo">
+                <a href="coin-center.html">
+                    <img src="图片/金币.png" alt="金币兑换">
+                    <div>每日签到领金币</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部广告 -->
+    <div class="bottom-ads">
+        <div class="ad-item">
+            <img src="图片/广告1.jpg" alt="双层加粗丝滑布">
+            <div class="ad-desc">双层加粗丝滑布</div>
+        </div>
+        <div class="ad-item">
+            <img src="图片/广告2.jpg" alt="网易游戏">
+            <div class="ad-desc">网易游戏 1元20个</div>
+        </div>
+        <div class="ad-item">
+            <img src="图片/广告3.jpg" alt="滑行飞机模型">
+            <div class="ad-desc">滑行飞机模型</div>
+        </div>
+        <div class="ad-item">
+            <img src="图片/广告4.jpg" alt="皂牌肥皂">
+            <div class="ad-desc">皂牌肥皂</div>
+        </div>
+        <div class="ad-item">
+            <img src="图片/广告5.jpg" alt="月卡充值">
+            <div class="ad-desc">月卡充值</div>
+        </div>
+        <div class="ad-item">
+            <img src="图片/广告6.jpg" alt="官方专密产品">
+            <div class="ad-desc">官方专密产品</div>
+        </div>
+    </div>
+    
+    <script src="taobao-main.js"></script>
+</body>
+</html>
